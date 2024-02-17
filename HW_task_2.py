@@ -5,7 +5,7 @@
 """
 
 
-def dict_of_var(**kwargs) -> dict:
+def dict_of_var(**kwargs: any) -> dict:
     my_dict = {}
     for key, value in locals()['kwargs'].items():
         try:
